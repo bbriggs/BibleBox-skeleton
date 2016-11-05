@@ -8,8 +8,8 @@
 
 	
 $result = array  (
-		array ( 'url' => "/Shared/......" , "counter" => 4 ),
-		array ( 'url' => "/Shared/......" , "counter" => 5 ),
+		array ( 'url' => "/......" , "counter" => 4 ),
+		array ( 'url' => "/......" , "counter" => 5 ),
 		)
 
 
