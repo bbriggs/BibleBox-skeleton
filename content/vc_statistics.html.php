@@ -4,12 +4,12 @@
 
     HTML Generation function for PHP-Download-Counter Statistics
 
-    will be called by dl_statistics_display.php with an 
+    will be called by vc_display.php with an 
 
 	
 $result = array  (
-		array ( 'url' => "/Shared/......" , "counter" => 4 ),
-		array ( 'url' => "/Shared/......" , "counter" => 5 ),
+		array ( 'url' => "/......" , "counter" => 4 ),
+		array ( 'url' => "/......" , "counter" => 5 ),
 		)
 
 
@@ -39,14 +39,14 @@ function print_table_head() {
 
 echo <<<EOD
 	<table>
-	<tr><th></th><th><a href="dl_statistics_display.php?sortBy=url">Filename:</a></th><th><a href="dl_statistics_display.php?sortBy=counter&sortOrder=DESC">Downloads:</th></tr>
+	<tr><th></th><th><a href="vc_display.php?sortBy=day">Day:</a></th><th><a href="vc_display.php?sortBy=counter&sortOrder=DESC">Visitors:</th></tr>
 EOD;
 }
 
-function print_table_line($no , $filename = "" , $count = 0) {
+function print_table_line($no , $day = "" , $count = 0) {
 
 echo <<<EOD
-	<tr><td></td><td>$filename</td><td>$count</td></tr>
+	<tr><td></td><td>$day</td><td>$count</td></tr>
 EOD;
 
 }
@@ -68,10 +68,9 @@ function  output_html   ( $result = array () , $arguments = array ()  ) {
 
 
 	foreach ( $result as $no => $line ) {
-		print_table_line ( $no, $line['url'], $line['counter'] );
+		print_table_line ( $no, $line['day'], $line['counter'] );
 
 	}
 
 	print_footer();
 }
-
