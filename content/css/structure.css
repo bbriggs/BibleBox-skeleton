@@ -177,6 +177,19 @@ textarea:first-child {
     margin: 0;
   }
 
+  #icon-nav ul {
+    display: block;
+	clear: both;
+  }
+  #icon-nav ul li {
+	list-style-type: none;
+	padding: 10px;
+    float: left;
+  }
+  #icon-nav ul li:last-child {
+    margin: 0;
+  }
+
   #content #chat #shoutbox-input input,
   #content #chat #shoutbox-input button {
     float: left;
