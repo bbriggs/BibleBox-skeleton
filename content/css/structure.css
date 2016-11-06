@@ -56,6 +56,19 @@
   margin-top: 50px;
 }
 
+#icon-nav ul {
+display: block;
+clear: both;
+}
+#icon-nav ul li {
+list-style-type: none;
+padding: 7px;
+float: left;
+}
+#icon-nav ul li:last-child {
+margin: 0;
+}
+
 #content #welcome p {
 	font-size: 1.2em;
 	margin: 0;
@@ -174,19 +187,6 @@ textarea:first-child {
     float: left;
   }
   #header #top-nav ul li:last-child {
-    margin: 0;
-  }
-
-  #icon-nav ul {
-    display: block;
-	clear: both;
-  }
-  #icon-nav ul li {
-	list-style-type: none;
-	padding: 10px;
-    float: left;
-  }
-  #icon-nav ul li:last-child {
     margin: 0;
   }
 
