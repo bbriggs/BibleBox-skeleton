@@ -85,7 +85,7 @@ margin: 0;
   font-weight: 700;
 }
 
-#footer {
+#footer, #footer a {
   color: #f8f8f8;
 }
 
